@@ -1,0 +1,18 @@
+version: '2'
+services:
+
+  app:
+    build: ./simpleDir/
+    ports:
+      - "5000:5000"
+    container_name: app
+    networks:
+      - simpleNet
+
+networks:
+  simpleNet:
+    driver: bridge
+
+
+
+
